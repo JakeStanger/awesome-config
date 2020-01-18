@@ -7,8 +7,13 @@ function run {
   fi
 }
 
+run feh --bg-fill /home/jake/Wallpaper.jpg
+run picom -b -d :0 -CG
 run discord
 run caprine
 run firefox
 run mailspring
 run steam
+
+run kitty --session /home/jake/.config/kitty/ncmpcpp.session
+run kitty

@@ -11,11 +11,11 @@ local themes_path = gfs.get_themes_dir()
 
 local theme = {}
 
-theme.font          = "sans 10"
+theme.font          = "Jetbrains Mono 10"
 
 theme.bg_normal     = "#2d2d2d"
 theme.bg_focus      = "#6699cc"
-theme.bg_urgent     = "#ff0000"
+theme.bg_urgent     = "#ff4444"
 theme.bg_minimize   = "#444444"
 theme.bg_systray    = theme.bg_normal
 
@@ -24,9 +24,9 @@ theme.fg_focus      = "#ffffff"
 theme.fg_urgent     = "#ffffff"
 theme.fg_minimize   = "#ffffff"
 
-theme.useless_gap   = dpi(0)
+theme.useless_gap   = dpi(5)
 theme.border_width  = dpi(1)
-theme.border_normal = "#000000"
+theme.border_normal = "#111"
 theme.border_focus  = "#535d6c"
 theme.border_marked = "#91231c"
 
@@ -53,6 +53,8 @@ theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
 )
 
 -- Variables set for theming notifications:
+theme.notification_font = "Jetbrains Mono 9"
+theme.notification_height = dpi(150)
 -- notification_font
 -- notification_[bg|fg]
 -- notification_[width|height|margin]
@@ -63,7 +65,7 @@ theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
 -- menu_[border_color|border_width]
 theme.menu_submenu_icon = themes_path.."default/submenu.png"
 theme.menu_height = dpi(15)
-theme.menu_width  = dpi(100)
+theme.menu_width  = dpi(150)
 
 -- You can add as many variables as
 -- you wish and access them by using
@@ -124,7 +126,7 @@ theme.awesome_icon = theme_assets.awesome_icon(
 
 -- Define the icon theme for application icons. If not set then the icons
 -- from /usr/share/icons and /usr/share/icons/hicolor will be used.
-theme.icon_theme = nil
+theme.icon_theme = "Paper"
 
 return theme
 
